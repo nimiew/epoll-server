@@ -1,7 +1,8 @@
-#include "util.h"
 #include <fcntl.h>
 #include <sstream>
 #include <iostream>
+
+#include "util.h"
 
 void check(int exp, const char *msg)
 {
