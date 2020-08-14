@@ -53,16 +53,25 @@ DELETE /items/{name} HTTP/1.1
 
 ## Sending Requests (use uppercase!)
 ### GET
+Get all items
 ```
 ./send.sh GET
-./send GET {name}
 ```
-### POST (will create if not found)
+Get item with specified name
+```
+./send.sh GET {name}
+```
+### POST
+Update item with specified name and if not found, create item
 ```
 ./send.sh POST {name} {price}
 ```
 ### DELETE
+Delete all items
 ```
 ./send.sh DELETE
+```
+Delete item with specified name
+```
 ./send.sh DELETE {name}
 ```
